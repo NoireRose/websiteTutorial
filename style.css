@@ -1,0 +1,38 @@
+* {
+    font-family: Arial;
+}
+.parent{
+    background-color: lightblue;
+    height: 200vh;
+    width: 175px;
+
+    position: static;
+}
+.one{
+    background-color: lightgreen;
+    height: 50px;
+    width: 100px;
+
+    position: static;
+}
+.two{
+    background-color: lightcoral;
+    height: 50px;
+    width: 100px;
+
+    position: static;
+}
+.three{
+    background-color: lightpink;
+    height: 50px;
+    width: 100px;
+
+    position: static;
+}
+.default{
+    background-color: whitesmoke;
+    height: 50px;
+    width: 100px;
+
+    position: static;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssPosition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        position: relative; (similar to position: static;) Modifiable left, right, up and down tag(s). Relative to its original position (static position).
+        
+        position: absolute; (similar to relative)  Modifiable left, right, up and down tag(s).
+        absolute element(s) will reference parent element(s) instead of top left corner, if parents position value is assigened any other position tag other than static.
+        
+        position: fixed; Always references page / top left corner (no matter parent element); stays in same position when you scroll.
+
+        position: sicky; (combination of relative and fixed position). Both references parent element (left, right, up and down) and stays in same position when you scroll.
+    -->
+    <!--
+        class="" can have multiple calls class="one two" would be called .one{} & .two{} in css.
+        id="" can only have one unique call (isn't enforced / 'id' should rarly be used).
+
+        Can cast to child elements using    .parent .child{}
+        Can multi-select elements using    .some-child, .some-child... {}
+        * parents all elements in a given page. Main use is to default font-family for all elements    * {font-family: Arial;}
+    -->
+    <!--
+        % - given % of parent element
+        em - is based off of font-size (dunno how exactly this work, semi-complicated)
+        rem - (similar to em but scales off the font-size from the root of your document)
+        px - is based off of screen pixels
+    -->
+    <!--
+        Specificity level:
+        inline:style(s) -> id -> class -> base-element
+
+        css reads from top to bottem.
+        Tags of same level that reference same element, the bottem reference will override any above it (specifically anything that overlaps between the calls).
+
+        Ex. of inline:style    <div style="color: red;">something</div>
+    -->
+
+    <div class="parent">
+        parent
+        <div class="default">default</div>
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+</body>
+</html>
